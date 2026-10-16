@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.14)
 
 project(calculator LANGUAGES CXX)
 
+set(CMAKE_SKIP_INSTALL_ALL_DEPENDENCY TRUE)
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_program(CLANG_FORMAT_EXECUTABLE NAMES clang-format)
@@ -21,7 +23,7 @@ include(FetchContent)
 FetchContent_Declare(
     calc_math
     GIT_REPOSITORY https://github.com/Antero0714/math-library.git
-    GIT_TAG b5d5fb14f50ab8bfb69d56e657d43c40d575678d
+    GIT_TAG 33b3bddb988a49bc77c46635bdda381fa6b0884e
 )
 
 FetchContent_MakeAvailable(calc_math)
