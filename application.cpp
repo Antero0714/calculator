@@ -140,7 +140,7 @@ void makeCalculate(Task &task)
     }
     else if (task.operation == '!')
     {
-        task.status = calc_math::factorial(task.first_number, task.result);
+        task.status = calc_math::factorial(task.first_number, task.second_number, task.result);
     }
     else
     {
